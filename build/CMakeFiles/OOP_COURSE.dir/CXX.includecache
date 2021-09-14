@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/bw_matrix.h
+matrix.h
+../include/matrix.h
+
+../include/matrix.h
+vector
+-
+ostream
+-
+
+/home/fisibula/CLionProjects/OOP_COURSE/src/bw_matrix.cpp
+bw_matrix.h
+/home/fisibula/CLionProjects/OOP_COURSE/src/bw_matrix.h
+iomanip
+-
+iostream
+-
+
