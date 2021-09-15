@@ -10,12 +10,18 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/include
 )
 
+find_package(OpenCV REQUIRED)
+
 file(GLOB lib_src
         "src/*.cpp"
 )
 
 add_library(${PROJECT_NAME} STATIC
         ${lib_src}
+)
+
+target_link_libraries(${PROJECT_NAME}
+        ${OpenCV_LIBS}
 )
 
 file(GLOB src_files
