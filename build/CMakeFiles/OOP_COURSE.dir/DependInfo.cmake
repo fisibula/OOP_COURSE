@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/fisibula/CLionProjects/OOP_COURSE/main.cpp" "/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles/OOP_COURSE.dir/main.cpp.o"
   "/home/fisibula/CLionProjects/OOP_COURSE/src/bw_matrix.cpp" "/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles/OOP_COURSE.dir/src/bw_matrix.cpp.o"
   "/home/fisibula/CLionProjects/OOP_COURSE/src/matrix.cpp" "/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles/OOP_COURSE.dir/src/matrix.cpp.o"
   "/home/fisibula/CLionProjects/OOP_COURSE/src/rgb_matrix.cpp" "/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles/OOP_COURSE.dir/src/rgb_matrix.cpp.o"

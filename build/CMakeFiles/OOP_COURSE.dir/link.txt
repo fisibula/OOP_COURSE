@@ -1,1 +1,2 @@
-/usr/bin/c++ -g CMakeFiles/OOP_COURSE.dir/main.cpp.o CMakeFiles/OOP_COURSE.dir/src/bw_matrix.cpp.o CMakeFiles/OOP_COURSE.dir/src/matrix.cpp.o CMakeFiles/OOP_COURSE.dir/src/rgb_matrix.cpp.o -o bin/OOP_COURSE 
+/usr/bin/ar qc lib/libOOP_COURSE.a CMakeFiles/OOP_COURSE.dir/src/bw_matrix.cpp.o CMakeFiles/OOP_COURSE.dir/src/matrix.cpp.o CMakeFiles/OOP_COURSE.dir/src/rgb_matrix.cpp.o
+/usr/bin/ranlib lib/libOOP_COURSE.a

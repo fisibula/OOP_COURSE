@@ -75,6 +75,16 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/snap/clion/163/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+.PHONY : edit_cache/fast
+
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
@@ -94,16 +104,6 @@ package_source:
 # Special rule for the target package_source
 package_source/fast: package_source
 .PHONY : package_source/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/163/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -149,12 +149,25 @@ OOP_COURSE/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_COURSE.dir/build.make CMakeFiles/OOP_COURSE.dir/build
 .PHONY : OOP_COURSE/fast
 
+#=============================================================================
+# Target rules for targets named runner
+
+# Build rule for target.
+runner: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runner
+.PHONY : runner
+
+# fast build rule for target.
+runner/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runner.dir/build.make CMakeFiles/runner.dir/build
+.PHONY : runner/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_COURSE.dir/build.make CMakeFiles/OOP_COURSE.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runner.dir/build.make CMakeFiles/runner.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -162,7 +175,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_COURSE.dir/build.make CMakeFiles/OOP_COURSE.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runner.dir/build.make CMakeFiles/runner.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -170,7 +183,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_COURSE.dir/build.make CMakeFiles/OOP_COURSE.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runner.dir/build.make CMakeFiles/runner.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 src/bw_matrix.o: src/bw_matrix.cpp.o
@@ -256,6 +269,7 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... OOP_COURSE"
+	@echo "... runner"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

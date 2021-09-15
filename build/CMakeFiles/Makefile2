@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/fisibula/CLionProjects/OOP_COURSE/build
 
 # The main recursive "all" target.
 all: CMakeFiles/OOP_COURSE.dir/all
+all: CMakeFiles/runner.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/OOP_COURSE.dir/clean
+clean: CMakeFiles/runner.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,12 +83,12 @@ clean: CMakeFiles/OOP_COURSE.dir/clean
 CMakeFiles/OOP_COURSE.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_COURSE.dir/build.make CMakeFiles/OOP_COURSE.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_COURSE.dir/build.make CMakeFiles/OOP_COURSE.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target OOP_COURSE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles --progress-num=1,2,3,4 "Built target OOP_COURSE"
 .PHONY : CMakeFiles/OOP_COURSE.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/OOP_COURSE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/OOP_COURSE.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles 0
 .PHONY : CMakeFiles/OOP_COURSE.dir/rule
@@ -99,6 +101,32 @@ OOP_COURSE: CMakeFiles/OOP_COURSE.dir/rule
 CMakeFiles/OOP_COURSE.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_COURSE.dir/build.make CMakeFiles/OOP_COURSE.dir/clean
 .PHONY : CMakeFiles/OOP_COURSE.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/runner.dir
+
+# All Build rule for target.
+CMakeFiles/runner.dir/all: CMakeFiles/OOP_COURSE.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runner.dir/build.make CMakeFiles/runner.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runner.dir/build.make CMakeFiles/runner.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles --progress-num=5,6 "Built target runner"
+.PHONY : CMakeFiles/runner.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/runner.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/runner.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles 0
+.PHONY : CMakeFiles/runner.dir/rule
+
+# Convenience name for target.
+runner: CMakeFiles/runner.dir/rule
+.PHONY : runner
+
+# clean rule for target.
+CMakeFiles/runner.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runner.dir/build.make CMakeFiles/runner.dir/clean
+.PHONY : CMakeFiles/runner.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -66,22 +66,9 @@ include CMakeFiles/OOP_COURSE.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/OOP_COURSE.dir/flags.make
 
-CMakeFiles/OOP_COURSE.dir/main.cpp.o: CMakeFiles/OOP_COURSE.dir/flags.make
-CMakeFiles/OOP_COURSE.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OOP_COURSE.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_COURSE.dir/main.cpp.o -c /home/fisibula/CLionProjects/OOP_COURSE/main.cpp
-
-CMakeFiles/OOP_COURSE.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_COURSE.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fisibula/CLionProjects/OOP_COURSE/main.cpp > CMakeFiles/OOP_COURSE.dir/main.cpp.i
-
-CMakeFiles/OOP_COURSE.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_COURSE.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fisibula/CLionProjects/OOP_COURSE/main.cpp -o CMakeFiles/OOP_COURSE.dir/main.cpp.s
-
 CMakeFiles/OOP_COURSE.dir/src/bw_matrix.cpp.o: CMakeFiles/OOP_COURSE.dir/flags.make
 CMakeFiles/OOP_COURSE.dir/src/bw_matrix.cpp.o: ../src/bw_matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OOP_COURSE.dir/src/bw_matrix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OOP_COURSE.dir/src/bw_matrix.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_COURSE.dir/src/bw_matrix.cpp.o -c /home/fisibula/CLionProjects/OOP_COURSE/src/bw_matrix.cpp
 
 CMakeFiles/OOP_COURSE.dir/src/bw_matrix.cpp.i: cmake_force
@@ -94,7 +81,7 @@ CMakeFiles/OOP_COURSE.dir/src/bw_matrix.cpp.s: cmake_force
 
 CMakeFiles/OOP_COURSE.dir/src/matrix.cpp.o: CMakeFiles/OOP_COURSE.dir/flags.make
 CMakeFiles/OOP_COURSE.dir/src/matrix.cpp.o: ../src/matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OOP_COURSE.dir/src/matrix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OOP_COURSE.dir/src/matrix.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_COURSE.dir/src/matrix.cpp.o -c /home/fisibula/CLionProjects/OOP_COURSE/src/matrix.cpp
 
 CMakeFiles/OOP_COURSE.dir/src/matrix.cpp.i: cmake_force
@@ -107,7 +94,7 @@ CMakeFiles/OOP_COURSE.dir/src/matrix.cpp.s: cmake_force
 
 CMakeFiles/OOP_COURSE.dir/src/rgb_matrix.cpp.o: CMakeFiles/OOP_COURSE.dir/flags.make
 CMakeFiles/OOP_COURSE.dir/src/rgb_matrix.cpp.o: ../src/rgb_matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OOP_COURSE.dir/src/rgb_matrix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OOP_COURSE.dir/src/rgb_matrix.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_COURSE.dir/src/rgb_matrix.cpp.o -c /home/fisibula/CLionProjects/OOP_COURSE/src/rgb_matrix.cpp
 
 CMakeFiles/OOP_COURSE.dir/src/rgb_matrix.cpp.i: cmake_force
@@ -120,7 +107,6 @@ CMakeFiles/OOP_COURSE.dir/src/rgb_matrix.cpp.s: cmake_force
 
 # Object files for target OOP_COURSE
 OOP_COURSE_OBJECTS = \
-"CMakeFiles/OOP_COURSE.dir/main.cpp.o" \
 "CMakeFiles/OOP_COURSE.dir/src/bw_matrix.cpp.o" \
 "CMakeFiles/OOP_COURSE.dir/src/matrix.cpp.o" \
 "CMakeFiles/OOP_COURSE.dir/src/rgb_matrix.cpp.o"
@@ -128,17 +114,17 @@ OOP_COURSE_OBJECTS = \
 # External object files for target OOP_COURSE
 OOP_COURSE_EXTERNAL_OBJECTS =
 
-bin/OOP_COURSE: CMakeFiles/OOP_COURSE.dir/main.cpp.o
-bin/OOP_COURSE: CMakeFiles/OOP_COURSE.dir/src/bw_matrix.cpp.o
-bin/OOP_COURSE: CMakeFiles/OOP_COURSE.dir/src/matrix.cpp.o
-bin/OOP_COURSE: CMakeFiles/OOP_COURSE.dir/src/rgb_matrix.cpp.o
-bin/OOP_COURSE: CMakeFiles/OOP_COURSE.dir/build.make
-bin/OOP_COURSE: CMakeFiles/OOP_COURSE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable bin/OOP_COURSE"
+lib/libOOP_COURSE.a: CMakeFiles/OOP_COURSE.dir/src/bw_matrix.cpp.o
+lib/libOOP_COURSE.a: CMakeFiles/OOP_COURSE.dir/src/matrix.cpp.o
+lib/libOOP_COURSE.a: CMakeFiles/OOP_COURSE.dir/src/rgb_matrix.cpp.o
+lib/libOOP_COURSE.a: CMakeFiles/OOP_COURSE.dir/build.make
+lib/libOOP_COURSE.a: CMakeFiles/OOP_COURSE.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fisibula/CLionProjects/OOP_COURSE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library lib/libOOP_COURSE.a"
+	$(CMAKE_COMMAND) -P CMakeFiles/OOP_COURSE.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OOP_COURSE.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/OOP_COURSE.dir/build: bin/OOP_COURSE
+CMakeFiles/OOP_COURSE.dir/build: lib/libOOP_COURSE.a
 .PHONY : CMakeFiles/OOP_COURSE.dir/build
 
 CMakeFiles/OOP_COURSE.dir/clean:
